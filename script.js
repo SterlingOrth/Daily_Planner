@@ -18,6 +18,7 @@ document.getElementById("currentDay").innerHTML = date;
 // varibles
 
 
+
 // i want to make a statement that 
 
 
@@ -34,7 +35,7 @@ for (var i = 0; i < time.length; i++) {
 
     timeDiv.appendChild(timeblockDiv)
 
-    textArea.classList.add("description")
+    textArea.classList.add(textArea)
 
     timeblockDiv.appendChild(textArea)
 
