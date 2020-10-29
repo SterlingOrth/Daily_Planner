@@ -12,3 +12,8 @@ bootstrap
 
 Screenshot:
 <img src="#" width=500width>
+
+Links:
+https://github.com/SterlingOrth/Daily_Planner.git
+
+https://sterlingorth.github.io/Daily_Planner/

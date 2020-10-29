@@ -1,19 +1,25 @@
 // Current Date and Time
 var timeBlock = document.querySelector('.container')
 
-// var date = new Date();
 
+// Date variable stored in global memory
 var date = moment().format('MMMM Do YYYY, h:mm:ss a');
-// while loop to append every 1000ms?
-// how to display current time without refresh?
-
-
-var time = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"]
-
 document.getElementById("currentDay").innerHTML = date;
 
+// currentTime = moment().format('h'); 
+// // how to target ??
+// if (currentTime == moment().hour()) {
+//     document.classList.add("present")
+// } else if (currentTime < moment().hour()) {
+//     document.classList.add("past")
+// } else if (currentTime > moment().hour()) {
+//     document.classList.add("future")
+// }
 
-// i want to make a statement that 
+var time = ["9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"]
+
+
+
 
 
 // for loop to create each timeblock
@@ -29,9 +35,7 @@ for (var i = 0; i < time.length; i++) {
 
     timeblockDiv.textContent = time[i]
     timeblockDiv.classList.add("hour")
-
-    // timeDiv.appendChild(timeblockDiv)
-    
+     
     timeblockDiv.appendChild(textArea)
 
     button.innerHTML = "save"
@@ -60,7 +64,11 @@ for (var i = 0; i < time.length; i++) {
        localStorage.setItem(event.target.id, event.target.previousSibling.value)
         })}
 
-    //    page loads, start first forloop 9-7
+    
+    
+    
+    
+        //    page loads, start first forloop 9-7
     // insdie use localstorage.getitem = key of item
     // i+ am/pm
     // or remove am/pm
